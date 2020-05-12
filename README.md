@@ -2,6 +2,8 @@
 
 This project is to demo assembling two micro-frontends in one SPA.
 
+The micro-frontends are implemented using web components.
+
 Each micro-frontend is deployed independently with their own sub-domains:
 
 1. https://mapteb.github.io/micro-frontends-homeapp/homeApp.html
