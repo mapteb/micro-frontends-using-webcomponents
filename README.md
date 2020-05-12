@@ -1,2 +1,2 @@
 # micro-frontends-homeapp
-An SPA with two micro-frontends, homeapp and cartapp
+An SPA demo with two micro-frontends, homeapp and cartapp
