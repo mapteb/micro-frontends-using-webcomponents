@@ -45,7 +45,7 @@ class ProductsComp extends HTMLElement {
     createProductsApp() {
 
         return `<div>
-        <div class="row row-cols-4">
+        <div class="row row-cols-3">
             <div class="col-sm"><img src="apple.jpg" height="150" width="150"><br />
             <span style="color: black;">Apple $1.00/lb</span> 
             <input type="checkbox" name="fruits" value="apple">
@@ -56,11 +56,11 @@ class ProductsComp extends HTMLElement {
             <div class="col-sm"><img src="orange.jpg" height="150" width="150"><br />
             <span style="color: black;">Orange $1.00/lb</span> <input type="checkbox" name="fruits" value="orange">
             </div>
-            <div class="col-sm">&nbsp;</div>
             </div>
         </div>
-        <div class="row"><div class="col-sm">&nbsp;</div></div>
-        <p><button id="productsCompBtn" class="pure-button" disabled>Add to Cart</button></p>`;
+        <div class="row row row-cols-3"><div class="col-sm">&nbsp;</div></div>
+        <div class="row row-cols-3"><div class="col-sm d-flex justify-content-center">
+        <p><button id="productsCompBtn" class="btn btn-primary" disabled>Add to Cart</button></p></div></div>`;
     }
 }
 window.customElements.define('products-comp', ProductsComp);
