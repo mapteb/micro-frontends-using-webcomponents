@@ -1,7 +1,4 @@
 class ProductsComp extends HTMLElement {
-    static get observedAttributes() {
-        return ['data-request'];
-    }
     constructor() {
         super();
 
