@@ -81,24 +81,18 @@
       </div>
     </div>
   </main>
-
-
   <section>
     <div>
-
-
       <section id="productsAppView">
         <span>
         </span>
       </section>
     </div>
-
   </section>
 
   <script>
     document.getElementById("productsApp").addEventListener('selectedFruits', e => {
       if (e.detail != null && e.detail.length > 0) {
-        console.log(">>> products evt recd: ", e);
         document.getElementById("cartapp").dispatchEvent(
           new CustomEvent('cartLoaded', {
             detail: e.detail
@@ -109,15 +103,6 @@
         elem.innerText = '' + e.detail.length;
       }
     });
-    window.addEventListener('message', e => {
-      console.log(">>> cart evt recd: ", e);
-      document.getElementById("cartIFrame").setAttribute("src", "");
-    });
-
-    function handleCartLoaded() {
-      document.getElementById("cartIFrame").setAttribute("src", "http://localhost:8080/cartApp.html");
-    }
-
   </script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
