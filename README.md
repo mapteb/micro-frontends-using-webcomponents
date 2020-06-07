@@ -17,3 +17,7 @@ The above two front-ends are assembled and displayed as one SPA at: https://mapt
 1. https://github.com/mapteb/micro-frontends-homeapp/tree/master/docs
 
 2. https://github.com/ns-code/micro-frontends-cartapp/tree/master/docs
+
+### More Info
+
+More info about this project is also available at this  [DZone article](https://dzone.com/articles/micro-frontends-a-simple-demo)
