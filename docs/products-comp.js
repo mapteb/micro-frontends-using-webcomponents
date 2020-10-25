@@ -11,7 +11,7 @@ class ProductsComp extends HTMLElement {
                         break;
                     }
                 }
-                document.getElementById("productsCompBtn").disabled = !atleastOneChecked;
+                //document.getElementById("productsCompBtn").disabled = !atleastOneChecked;
             }
         });
 
@@ -57,7 +57,7 @@ class ProductsComp extends HTMLElement {
         </div>
         <div class="row row row-cols-3"><div class="col-sm">&nbsp;</div></div>
         <div class="row row-cols-3"><div class="col-sm d-flex justify-content-center">
-        <p><button id="productsCompBtn" class="btn btn-primary" disabled>Add to Cart</button></p></div></div>`;
+        <p><button id="productsCompBtn" class="btn btn-primary">Add to Cart</button></p></div></div>`;
     }
 }
 window.customElements.define('products-comp', ProductsComp);
