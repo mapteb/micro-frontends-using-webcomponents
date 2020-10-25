@@ -23,7 +23,7 @@ class ProductsComp extends HTMLElement {
                         selectedFruits.push(el.getAttribute("value"));
                     }
                 };
-                if (selectedFruits.length > 0) {
+                if (selectedFruits.length >= 0) {
                     this.dispatchEvent(
                         new CustomEvent('selectedFruits', {
                             detail: selectedFruits
